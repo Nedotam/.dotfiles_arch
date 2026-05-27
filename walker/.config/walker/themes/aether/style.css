@@ -1,0 +1,183 @@
+@import "/home/chair/.config/current-theme/theme/walker.css";
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+popover {
+  background: @background;
+  border: 1px solid @border;
+  border-radius: 12px;
+  padding: 6px;
+}
+
+scrollbar {
+  opacity: 0;
+}
+
+.normal-icons {
+  -gtk-icon-size: 16px;
+}
+
+.large-icons {
+  -gtk-icon-size: 28px;
+}
+
+.box-wrapper {
+  background: @base;
+  border-radius: 12px;
+  padding: 8px;
+  min-width: 620px;
+}
+
+.box {
+  padding: 4px 0;
+}
+
+.search-container {
+  background: @base;
+  border: 1px solid @border;
+  border-radius: 8px;
+  margin: 4px 6px;
+}
+
+.input {
+  caret-color: @selected-text;
+  padding: 10px 14px;
+  color: @foreground;
+  font-size: 15px;
+}
+
+.input placeholder {
+  opacity: 0.35;
+  color: @foreground;
+}
+
+.content-container {
+  margin: 2px 0;
+}
+
+.placeholder {
+  color: @foreground;
+  font-size: 13px;
+  padding: 20px 0;
+  opacity: 0.5;
+}
+
+.list {
+  color: @foreground;
+  padding: 2px 0;
+}
+
+.item-box {
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin: 0 4px;
+}
+
+child:selected {
+  background: alpha(@selected-text, 0.15);
+}
+
+child:selected .item-box * {
+  color: @foreground;
+}
+
+.item-text-box {
+  margin-left: 12px;
+}
+
+.item-text {
+  font-size: 13px;
+}
+
+.item-subtext {
+  font-size: 0px;
+  min-height: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.item-image-text {
+  font-size: 20px;
+  min-width: 28px;
+  opacity: 0.7;
+}
+
+.preview {
+  border: 1px solid @border;
+  border-radius: 8px;
+  padding: 10px;
+  color: @foreground;
+}
+
+.preview-box {
+  color: @foreground;
+}
+
+.calc .item-text {
+  font-size: 22px;
+}
+
+.symbols .item-image {
+  font-size: 22px;
+}
+
+.keybinds {
+  padding: 6px 10px 2px;
+  border-top: 1px solid @border;
+  font-size: 11px;
+  color: @foreground;
+  opacity: 0.6;
+}
+
+.keybind-button {
+  background: alpha(@foreground, 0.05);
+  border-radius: 6px;
+  padding: 2px 8px;
+  opacity: 0.6;
+}
+
+.keybind-button:hover {
+  opacity: 0.9;
+}
+
+.keybind-label {
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid @border;
+  font-size: 10px;
+}
+
+.error {
+  padding: 8px 12px;
+  background: @selected-text;
+  color: @base;
+  border-radius: 6px;
+  margin: 4px 6px 0;
+}
+
+:not(.calc).current {
+  font-style: italic;
+}
+
+.todo.done .item-text-box {
+  opacity: 0.2;
+}
+
+.todo.urgent {
+  font-size: 22px;
+}
+
+.todo.active {
+  font-weight: bold;
+}
+
+.bluetooth.disconnected {
+  opacity: 0.4;
+}
+
+.preview .large-icons {
+  -gtk-icon-size: 56px;
+}

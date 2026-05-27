@@ -1,0 +1,18 @@
+# Large binary files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.mp4
+*.webm
+*.mov
+*.iso
+*.img
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

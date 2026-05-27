@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=CrossMacro
+Comment=Mouse/Keyboard Macro Recorder
+Exec=dotnet run --project /home/chair/CrossMacro/src/CrossMacro.UI/CrossMacro.UI.csproj
+Icon=applications-utilities  # or download macro icon
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupWMClass=CrossMacro

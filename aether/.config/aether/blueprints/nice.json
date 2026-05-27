@@ -1,0 +1,70 @@
+{
+  "palette": {
+    "colors": [
+      "#292323",
+      "#a97070",
+      "#70a970",
+      "#a9a970",
+      "#7070a9",
+      "#a970a9",
+      "#70a9a9",
+      "#dcd6d6",
+      "#877878",
+      "#be8d8d",
+      "#8dbe8d",
+      "#bebe8d",
+      "#8d8dbe",
+      "#be8dbe",
+      "#8dbebe",
+      "#dcd6d6"
+    ],
+    "wallpaper": "/home/chair/.cache/aether/processed-wallpaper-1778920337957.jpg",
+    "wallpaperUrl": null,
+    "wallpaperSource": "local",
+    "lightMode": false,
+    "lockedColors": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "extendedColors": {}
+  },
+  "adjustments": {
+    "vibrance": 0,
+    "saturation": 0,
+    "contrast": 0,
+    "brightness": 0,
+    "shadows": 0,
+    "highlights": 0,
+    "hueShift": 0,
+    "temperature": 0,
+    "tint": 0,
+    "blackPoint": 0,
+    "whitePoint": 0,
+    "gamma": 1
+  },
+  "appOverrides": {},
+  "settings": {
+    "includeNeovim": true,
+    "includeZed": false,
+    "includeVscode": false,
+    "includeGtk": false,
+    "lightMode": false,
+    "selectedNeovimConfig": null
+  },
+  "timestamp": 1778920361541,
+  "name": "nice"
+}
