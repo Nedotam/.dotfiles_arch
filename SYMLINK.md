@@ -47,6 +47,14 @@ Edits go directly into the tracked repo file since all paths are symlinks. Just 
 
 These packages are expected on the system. Install them with a single command:
 
+> **Hyprland version:** This config targets Hyprland **≤ 0.54.x** — the last releases using hyprlang (`.conf`) before 0.55+ switched to Lua as the default config language. To stay on hyprlang, add `IgnorePkg = hyprland` to `/etc/pacman.conf`.
+>
+> When ready to migrate to Lua, these tools can convert the config:
+> - `paru -S hyprlang2lua` — CLI converter ([github](https://github.com/EIonTusk/hyprlang2lua))
+> - `pip install hyprland-config` — Python library with atomic migration API ([pypi](https://pypi.org/project/hyprland-config/))
+> - `hyprlang-to-lua.nvim` — Neovim plugin for interactive transpilation ([github](https://github.com/pynappo/hyprlang-to-lua.nvim))
+> - `hypr2lua` — standalone Go CLI ([github](https://github.com/Phillezi/hypr2lua))
+
 ```bash
 # Official repos
 sudo pacman -S --needed \
