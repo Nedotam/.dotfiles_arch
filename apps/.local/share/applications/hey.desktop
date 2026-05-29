@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=HEY
+Exec=chromium --app=https://hey.com
+Icon=/home/chair/.local/share/applications/icons/HEY.png
+Terminal=false
+Categories=Network;WebBrowser;
+StartupWMClass=chromium

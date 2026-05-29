@@ -1,0 +1,70 @@
+{
+  "palette": {
+    "colors": [
+      "#232829",
+      "#a78181",
+      "#8aad8a",
+      "#b3b393",
+      "#9eaeb8",
+      "#c0a5c0",
+      "#adc0c7",
+      "#d6dcda",
+      "#788387",
+      "#ceb6b6",
+      "#bdd3bd",
+      "#d5d5c1",
+      "#c6d0d6",
+      "#dac8da",
+      "#cbd8dd",
+      "#d6dcd9"
+    ],
+    "wallpaper": "/home/chair/Wallpapers/snowy-peaks-mountains-covered-by-dark-cloudy-sky.jpg",
+    "wallpaperUrl": null,
+    "wallpaperSource": "local",
+    "lightMode": false,
+    "lockedColors": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "extendedColors": {}
+  },
+  "adjustments": {
+    "vibrance": 0,
+    "saturation": 0,
+    "contrast": 0,
+    "brightness": 0,
+    "shadows": 0,
+    "highlights": 0,
+    "hueShift": 0,
+    "temperature": 0,
+    "tint": 0,
+    "blackPoint": 0,
+    "whitePoint": 0,
+    "gamma": 1
+  },
+  "appOverrides": {},
+  "settings": {
+    "includeNeovim": true,
+    "includeZed": false,
+    "includeVscode": false,
+    "includeGtk": false,
+    "lightMode": false,
+    "selectedNeovimConfig": null
+  },
+  "timestamp": 1779994385414,
+  "name": "pastel"
+}

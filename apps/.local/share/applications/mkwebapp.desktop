@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=mkwebapp
+Comment=Create a webapp .desktop entry from name, URL, and optional icon
+Exec=kitty --class=mkwebapp --title=mkwebapp -e mkwebapp
+Icon=applications-internet
+Terminal=false
+Categories=Utility;

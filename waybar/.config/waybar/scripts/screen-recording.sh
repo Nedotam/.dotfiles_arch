@@ -1,5 +1,5 @@
 #!/bin/bash
-if pgrep -x wf-recorder >/dev/null; then
+if [ -f /tmp/hypr-recording-active ]; then
   echo '{"text": "", "class": "active", "tooltip": "Screen recording active"}'
 else
   echo '{"text": "", "class": "inactive"}'
