@@ -124,7 +124,7 @@
     "status-icons": {
         "paused": "⏸"
     },
-    "ignored-players": ["firefox"]
+    "ignored-players": ["firefox", "spotify", "chromium", "chrome", "brave", "Thunar"]
   },
   "group/tray-expander": {
     "orientation": "inherit",

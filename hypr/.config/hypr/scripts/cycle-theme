@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+IDX_FILE="$HOME/.config/current-theme/.blueprint-idx"
+mapfile -t blueprints < <(aether --list-blueprints 2>/dev/null)
+count=${#blueprints[@]}
+
+if [ "$count" -eq 0 ]; then
+    notify-send "Cycle Theme" "No blueprints saved yet"
+    exit 1
+fi
+
+current=$(cat "$IDX_FILE" 2>/dev/null || echo -1)
+next=$(( (current + 1) % count ))
+
+aether --apply-blueprint "${blueprints[next]}" >/dev/null 2>&1
+mkdir -p "$(dirname "$IDX_FILE")"
+wallpaper=$(aether --show-blueprint "${blueprints[next]}" 2>/dev/null | grep -oP '(?<=Wallpaper: ).*')
+if [ -n "$wallpaper" ] && [ -f "$wallpaper" ]; then
+    ln -sf "$wallpaper" "$(dirname "$IDX_FILE")/background"
+    pgrep awww-daemon >/dev/null || uwsm-app -- awww-daemon &
+    for i in 1 2 3 4 5; do
+        awww img --transition-type wipe --transition-angle 120 --transition-duration 1 --transition-fps 165 "$wallpaper" 2>/dev/null && break
+        sleep 0.5
+    done
+fi
+echo "$next" > "$IDX_FILE"
+notify-send "Theme: ${blueprints[next]}" "$((next+1))/$count"

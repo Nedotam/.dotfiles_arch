@@ -1,0 +1,6 @@
+#!/bin/bash
+pgrep awww-daemon >/dev/null || uwsm-app -- awww-daemon &
+for i in 1 2 3 4 5; do
+  awww img --transition-type grow --transition-duration 2.4 --transition-fps 60 "$(readlink -f ~/.config/current-theme/background 2>/dev/null || echo ~/.config/current-theme/backgrounds/wallpaper.jpg)" 2>/dev/null && exit 0
+  sleep 0.5
+done
